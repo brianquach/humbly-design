@@ -83,7 +83,7 @@ header {
 
 nav {
   display: inline-block;
-  line-height: 80px;
+  line-height: 78px;
   float: right;
 }
 
@@ -189,6 +189,25 @@ nav {
   background-color: rgba(60, 7, 142, 0.13);
 }
 
+.site-heading-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.site-heading {
+  font-family: "Lobster", "Oswald", sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  padding: 20px 60px;
+  border: 4px solid;
+  border-radius: 5px;
+}
+
 /*
   SERVICE SECTION
 */
@@ -219,6 +238,10 @@ nav {
 /*
   ABOUT SECTION
 */
+
+#about p:nth-child(n+2) {
+  margin-top: 1rem;
+}
 
 .about-information {
   text-align: center;
@@ -384,5 +407,15 @@ nav {
 
   .mobile-menu {
     display: none;
+  }
+}
+
+@media screen and (max-height: 675px) {
+  body {
+    background-position: 0 0;
+  }
+
+  .contact-us-background {
+  	background-position: 0 0;
   }
 }
