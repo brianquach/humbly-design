@@ -1,0 +1,24 @@
+{
+  "name": "humblydesign",
+  "description": "Humbly Design website",
+  "main": "gulp_hd.js",
+  "authors": [
+    "Brian Quach <13rianquach@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "bootstrap": "boostrap#^3.3.7"
+  }
+}
