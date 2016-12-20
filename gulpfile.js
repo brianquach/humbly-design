@@ -60,3 +60,9 @@ gulp.task('build', ['minify-code', 'minify-img', 'copy-vendor-code'], function()
 });
 
 gulp.task('default', ['build']);
+
+// Define all watch tasks below here
+
+gulp.task('watch', function () {
+   gulp.watch('src/**/*.{js,css}', ['build']);
+});
