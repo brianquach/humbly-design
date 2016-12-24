@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 $(document).ready(function () {
   var $name = $('#name');
   var $email = $('#email');
@@ -42,7 +45,7 @@ $(document).ready(function () {
       return false;
     }
     $submitMessageBtn.remove();
-    
+
     $.ajax({
       method: 'POST',
       url: '/email',

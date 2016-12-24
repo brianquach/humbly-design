@@ -20469,6 +20469,12 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 $(document).ready(function () {
+  _reactDom2.default.render(_react2.default.createElement(
+    'h1',
+    null,
+    'Hello, world!'
+  ), document.getElementById('main-header'));
+  alert('sdfds');
   var $name = $('#name');
   var $email = $('#email');
   var $topic = $('#topic');
