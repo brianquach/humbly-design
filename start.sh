@@ -1,8 +1,5 @@
 #!/bin/bash -e
 
-#load NVM
-source /$HOME/.nvm/nvm.sh
-
 #start the app
 app=$HOME/humblydesign
 
@@ -10,5 +7,5 @@ app=$HOME/humblydesign
 cd /var/www/humblydesign && rm -rf * && cd $app/dist && cp -R * /var/www/humblydesign
 
 # Activate virtual environment
-cd /var/www/humblydesign && source venv/bin/activate
-pip install $app/requirements.txt && deactivate
+cd /var/www/humblydesign && virtualenv venv && source venv/bin/activate
+pip install -r $app/requirements.txt && deactivate
