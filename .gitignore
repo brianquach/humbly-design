@@ -1,0 +1,7 @@
+npm-debug.log
+.DS_Store
+dist/humblydesign/__pycache__
+dist/venv
+node_modules
+*.log
+bower_components
